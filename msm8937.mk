@@ -103,6 +103,8 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libdisplayconfig \
     libqdMetaData.system \
+    liboverlay \
+    libvulkan \
     vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor \
     vendor.display.color@1.0-service \
@@ -369,8 +371,11 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service.msm8937
 
 # VNDK
+# Update this list with what each blob is actually for
+# libstdc++: camera.msm8937
 PRODUCT_PACKAGES += \
-    vndk-sp
+    libstdc++.vendor \
+    vndk_package
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
