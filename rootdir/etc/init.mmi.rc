@@ -316,3 +316,11 @@ on property:ro.boot.ram=4GB
 
 on property:sys.listeners.registered=*
     setprop vendor.sys.keymaster.loaded ${sys.listeners.registered}
+
+# Allow usb charging to be disabled peristently
+on property:persist.usb.chgdisabled=1
+#USB controller configuration
+    setprop vendor.usb.rndis.func.name "rndis"
+    setprop vendor.usb.rmnet.func.name "rmnet_bam"
+    setprop vendor.usb.rmnet.inst.name "rmnet_bam_dmux"
+    setprop vendor.usb.dpl.inst.name "dpl_bam_dmux"
