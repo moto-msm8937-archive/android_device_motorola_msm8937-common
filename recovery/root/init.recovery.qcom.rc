@@ -3,6 +3,14 @@ import init.target.recovery.rc
 on fs
     symlink /dev/block/bootdevice/by-name/oem /dev/block/bootdevice/by-name/vendor
 
+# Allow usb charging to be disabled peristently
+on property:persist.usb.chgdisabled=1
+#USB controller configuration
+    setprop vendor.usb.rndis.func.name "rndis"
+    setprop vendor.usb.rmnet.func.name "rmnet_bam"
+    setprop vendor.usb.rmnet.inst.name "rmnet_bam_dmux"
+    setprop vendor.usb.dpl.inst.name "dpl_bam_dmux"
+
 # separate copy needed to use /sbin/linker instead of /system/bin/linker
 service sbinqseecomd /sbin/qseecomd
     oneshot
