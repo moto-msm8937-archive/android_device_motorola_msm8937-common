@@ -27,7 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # Properties
-$(call inherit-product, device/motorola/msm8937-common/system_prop.mk)
+$(call inherit-product, device/motorola/msm8937-common/vendor_prop.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
