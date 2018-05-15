@@ -1,8 +1,8 @@
 # Moto USB configuration
-import /system/vendor/etc/init/hw/init.mmi.usb.rc
+import /vendor/etc/init/hw/init.mmi.usb.rc
 
 # Device specific configuration
-import /system/vendor/etc/init/hw/init.mmi_device.rc
+import /vendor/etc/init/hw/init.mmi_device.rc
 
 on early-boot
     write /sys/module/subsystem_restart/parameters/disable_restart_work 0x0
@@ -236,7 +236,7 @@ on boot
    chmod 0660 /persist/chargeonly/cooldown
 
 # Pass carrier to wlan
-service init_wifi /system/vendor/bin/sh /system/vendor/bin/wlan_carrier_bin.sh
+service init_wifi /vendor/bin/sh /vendor/bin/wlan_carrier_bin.sh
     class main
     user root
     group root
@@ -270,29 +270,29 @@ on property:ro.boot.dualsim=false
 on property:ro.boot.hwrev=*
    start mmi-boot-sh
 
-service adspd /system/vendor/bin/adspd
+service adspd /vendor/bin/adspd
    class main
    socket adspdsock stream 0660 system audio
    user audio
    group audio input diag
 
-service mmi-boot-sh /system/vendor/bin/sh /system/vendor/bin/init.mmi.boot.sh
+service mmi-boot-sh /vendor/bin/sh /vendor/bin/init.mmi.boot.sh
     class core
     user root
     oneshot
     disabled
 
-service mmi-laser-sh /system/vendor/bin/sh /system/vendor/bin/init.mmi.laser.sh
+service mmi-laser-sh /vendor/bin/sh /vendor/bin/init.mmi.laser.sh
     class core
     user root
     oneshot
 
-service charge_only_mode /system/vendor/bin/charge_only_mode
+service charge_only_mode /vendor/bin/charge_only_mode
     user root
     group graphics system input
     disabled
 
-service thermal-com /system/vendor/bin/thermal-engine --minimode
+service thermal-com /vendor/bin/thermal-engine --minimode
     class main
     user root
     disabled
@@ -314,7 +314,7 @@ on property:ro.bootmode=normal
 
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
-    swapon_all /system/vendor/etc/fstab.qcom
+    swapon_all /vendor/etc/fstab.qcom
     # Set correct rndis for usb tethering
     write /sys/class/android_usb/android0/f_rndis_qc/rndis_transports " "
 
