@@ -339,23 +339,23 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|12674982b974c4121467564b60b
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
 
 # Graphics - firmware
-etc/firmware/a225_pfp.fw
-etc/firmware/a225_pm4.fw
-etc/firmware/a225p5_pm4.fw
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
-etc/firmware/a420_pfp.fw
-etc/firmware/a420_pm4.fw
-etc/firmware/a530_gpmu.fw2
-etc/firmware/a530_pfp.fw
-etc/firmware/a530_pm4.fw
-etc/firmware/a530v1_pfp.fw
-etc/firmware/a530v1_pm4.fw
-etc/firmware/a530v2_seq.fw2
-etc/firmware/a530v3_gpmu.fw2
-etc/firmware/a530v3_seq.fw2
+etc/firmware/a225_pfp.fw:vendor/firmware/a225_pfp.fw
+etc/firmware/a225_pm4.fw:vendor/firmware/a225_pm4.fw
+etc/firmware/a225p5_pm4.fw:vendor/firmware/a225p5_pm4.fw
+etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw
+etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
+etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
+etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw
+etc/firmware/a530_gpmu.fw2:vendor/firmware/a530_gpmu.fw2
+etc/firmware/a530_pfp.fw:vendor/firmware/a530_pfp.fw
+etc/firmware/a530_pm4.fw:vendor/firmware/a530_pm4.fw
+etc/firmware/a530v1_pfp.fw:vendor/firmware/a530v1_pfp.fw
+etc/firmware/a530v1_pm4.fw:vendor/firmware/a530v1_pm4.fw
+etc/firmware/a530v2_seq.fw2:vendor/firmware/a530v2_seq.fw2
+etc/firmware/a530v3_gpmu.fw2:vendor/firmware/a530v3_gpmu.fw2
+etc/firmware/a530v3_seq.fw2:vendor/firmware/a530v3_seq.fw2
 
 # Graphics - HDR
 vendor/lib/libhdr_tm.so
@@ -662,11 +662,11 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e0a9fddd1ccbeb77766e3e8961553437d817948f
 
 # WCNSS
-etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
-etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin
-etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin
-etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin
-etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin::vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin:vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin:vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin:vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin
+etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
 
 # Wi-Fi
 vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so|0daafba7c1716d9dab9e21e921efb6070b28b274
@@ -752,7 +752,7 @@ vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 
 # Misc
-etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf
+etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf:vendor/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf
 etc/permissions/ConnectivityExt.xml
 etc/permissions/com.qti.dpmframework.xml
 framework/ConnectivityExt.jar
