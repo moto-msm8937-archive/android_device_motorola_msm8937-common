@@ -629,6 +629,20 @@ on property:wc_transport.start_fmhci=true
 on property:wc_transport.start_fmhci=false
     stop vendor.fmhal_service
 
+service vendor.hciattach /vendor/bin/hci_qcomm_init -e
+    class late_start
+    user bluetooth
+    group bluetooth net_bt_admin
+    disabled
+    oneshot
+
+on property:vendor.bluetooth.hciattach=true
+    start vendor.hciattach
+    setprop vendor.bluetooth.status on
+
+on property:vendor.bluetooth.hciattach=false
+    setprop vendor.bluetooth.status off
+
 service vendor.start_hci_filter /vendor/bin/wcnss_filter
     class late_start
     user bluetooth
