@@ -113,6 +113,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/external_camera_config.xml:system/etc/external_camera_config.xml
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8937 \
