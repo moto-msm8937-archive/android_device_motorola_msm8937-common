@@ -72,7 +72,7 @@ etc/permissions/com.quicinc.cne.xml
 framework/cneapiclient.jar
 framework/com.quicinc.cne.api-V1.0-java.jar
 framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
+-priv-app/CNEService/CNEService.apk|69da7058ac27e0af3d498816bc04773c47b0ebfc
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -178,7 +178,7 @@ framework/com.qti.location.sdk.jar|cb25606f1b8091b3fb2d134f3f1a4d8b24c94bb8
 framework/izat.xt.srv.jar|dd43374a25e1318551de3dae2f7bbb418f2f0f48
 lib64/liblocationservice_jni.so|36f1c1edb59bb6651abbb4854e21d4af9a119cf5
 lib64/libxt_native.so|8a3e77c8d2d5c23b37dc14b6dc5b43ca1edd0e97
-lib64/vendor.qti.gnss@1.0.so
+lib64/vendor.qti.gnss@1.0.so|57776eb3b6dce92da21456eb59773fdee08cc8c4
 lib64/vendor.qti.gnss@1.1.so|5a4dacdfc1152a4e24b86753e0da1733b78cea9d
 lib64/vendor.qti.gnss@1.2.so|a94e6f1b54bd0e7e5706287d83050720e9590092
 lib64/vendor.qti.gnss@2.0.so|bf0019b8f3f275bab608833097547f3430390606
