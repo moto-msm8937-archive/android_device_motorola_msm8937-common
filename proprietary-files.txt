@@ -148,10 +148,12 @@ vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so
 
 # ESEPower
-lib64/vendor.qti.esepowermanager@1.0.so
-vendor/bin/esepmdaemon
+lib64/vendor.qti.esepowermanager@1.0.so|e7534e73a50b39398d12ebcc1c4052816e03bf1b
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|ef20f7290638ed5772b7fd1a0714a71bfdaa1d9a
+vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
 vendor/lib/libesepm.so
-vendor/lib64/vendor.qti.esepowermanager@1.0_vendor.so
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|d1f650ecc386620a4d488a029d6a9f11a1322b6c
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|b0297afa7b5912900d41c8fb8b417f6dad3d0750
 
 # FM
 lib/vendor.qti.hardware.fm@1.0.so|1e9063e72c57c421e5946630ed06b5631a891f28
