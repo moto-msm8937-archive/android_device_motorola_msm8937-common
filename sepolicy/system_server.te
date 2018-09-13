@@ -17,5 +17,3 @@ allow system_server init:unix_stream_socket write;
 allow system_server vendor_file:file { getattr open read execute };
 
 allow system_server zygote:process getpgid;
-
-get_prop(system_server, vendor_alarm_boot_prop)
