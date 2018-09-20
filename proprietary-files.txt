@@ -434,10 +434,10 @@ vendor/lib64/libqti_performance.so
 vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so
 
 # Peripheral manager
-lib64/libperipheral_client.so
 vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
+vendor/bin/pm-service|af6ada29839bdbfcfacd9b2d86b2c23151d2aa47
+vendor/lib/libperipheral_client.so|6ed0a7a09744afb4024d46a5e1b3ad78e80d16ea
+vendor/lib64/libperipheral_client.so|0f18ac70f4982c07b51e6a63d3aef0c17b36a242
 
 # Postprocessing
 vendor/lib/libdisp-aba.so|d82b44e9519cd4f55b04f8f475dbd736e39714d9
