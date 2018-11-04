@@ -619,9 +619,10 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
 # Thermal engine
-vendor/bin/thermal-engine|08a85063576ec6f6a951dde18c1d5fce1785b137
-vendor/lib/libthermalclient.so|aadfb0b3880a5f101d452ffd5ea1b6d0b99910da
-vendor/lib64/libthermalclient.so|7a6451691d43922ff2d12662b05fd93a76621b73
+vendor/bin/thermal-engine|676d4cdfb4c97f6ad1d9f22f79844ae80e834c2b
+vendor/lib/libthermalclient.so|b41ea4c90353b8e057f774979d8ce5d3a006f70c
+vendor/lib64/libthermalclient.so|e1123e8b39a39d4907092271922e47190e19d1c5
+vendor/lib64/libthermalioctl.so|1ce39d2a088f8e943be9a4c4b6d3c212a9881d95
 
 # Time service
 -vendor/app/TimeService/TimeService.apk
