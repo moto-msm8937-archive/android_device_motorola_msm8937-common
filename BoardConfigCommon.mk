@@ -159,7 +159,11 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_EXFAT_DRIVER := exfat
-BOARD_ROOT_EXTRA_FOLDERS := dsp firmware fsg persist
+BOARD_ROOT_EXTRA_FOLDERS := fsg
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
