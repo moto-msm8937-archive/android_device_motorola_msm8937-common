@@ -33,12 +33,8 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 
 # AptX
-lib/libaptXHD_encoder.so
-lib/libaptX_encoder.so
-vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so
-vendor/lib/libaptXScheduler.so
-vendor/lib64/libaptXHD_encoder.so
-vendor/lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
+lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|e5d4835653f15c45d859c6d200cd34139a984bcc
