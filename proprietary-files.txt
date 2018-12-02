@@ -460,7 +460,7 @@ vendor/lib64/libqmi_encdec.so
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
 framework/qcrilhook.jar
-framework/qti-telephony-common.jar
+framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
 framework/QtiTelephonyServicelibrary.jar
 lib/libadropbox.so
 lib/libmdmcutback.so
@@ -523,7 +523,7 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
 -app/embms/embms.apk
--app/ims/ims.apk
+-priv-app/ims/ims.apk|eef47c0b6f250e7f96e7155d84274b1c83940d8f
 -app/imssettings/imssettings.apk
 etc/permissions/embms.xml
 etc/permissions/ims.xml
