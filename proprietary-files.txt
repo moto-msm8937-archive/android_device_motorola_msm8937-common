@@ -147,8 +147,8 @@ vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
 
 # IMS
--app/ims/ims.apk
 -app/imssettings/imssettings.apk
+-priv-app/ims/ims.apk|eef47c0b6f250e7f96e7155d84274b1c83940d8f
 
 # Keystore
 vendor/lib64/hw/keystore.msm8937.so
@@ -213,7 +213,7 @@ framework/com.qualcomm.qti.imscmservice@1.0-java.jar
 -framework/embmslibrary.jar
 -framework/imscmlibrary.jar
 -framework/qcrilhook.jar
-framework/qti-telephony-common.jar
+framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
 -framework/rcsimssettings.jar
 -framework/tcmclient.jar
 lib/lib_fpc_tac_shared.so
