@@ -324,3 +324,6 @@ on property:ro.boot.ram=3GB
 
 on property:ro.boot.ram=4GB
     write /sys/block/zram0/disksize 1073741824
+
+on property:sys.listeners.registered=*
+    setprop vendor.sys.keymaster.loaded ${sys.listeners.registered}
