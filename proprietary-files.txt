@@ -254,7 +254,7 @@ vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|84a70f6dd21bfbc97
 vendor/bin/mm-pp-dpps|9501dcc4c938e7171741be35400d6fa5004b61af
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/hw/vulkan.msm8937.so
+vendor/lib/hw/vulkan.msm8937.so|58d03a5762c0f562c17af93ecd1534ba08201fcf
 vendor/lib/libadreno_utils.so|5d5bb10f9fa53f604e68f9adfb766ce0b2d09571
 vendor/lib/libbccQTI.so|08b78a4e6f85315ac51221b4d283ecca78b3d27a
 vendor/lib/libC2D2.so|c4bd8db1bc07726fbe914e912c56e6bce928f0f9
@@ -281,7 +281,7 @@ vendor/lib/vendor.display.color@1.0.so|c74b9402c4e242e72a41185b49dac51806cd77ee
 vendor/lib/vendor.display.color@1.1.so|5cbf7dbcf436c7b52d2201e7b670d54a2c742994
 vendor/lib/vendor.display.postproc@1.0.so|84e2bec33b405cacc4b9087152f3216ebd8e20ad
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|ca1933a8339a22ca006da87142d7933f1a2a2bd
-vendor/lib64/hw/vulkan.msm8937.so
+vendor/lib64/hw/vulkan.msm8937.so|d84a24c0329da6e9efa45e002b2a1d35b57bddf
 vendor/lib64/libadreno_utils.so|6227acd25fe5c474c6156e2267c87d63993d5762
 vendor/lib64/libbccQTI.so|0f8c070984ee51dc88ea967ca2d3595fe63e01b4
 vendor/lib64/libC2D2.so|2638a3a47da43bce76cbc674151cf4310fdc9e52
