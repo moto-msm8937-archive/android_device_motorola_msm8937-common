@@ -264,6 +264,7 @@ vendor/lib/libc2d30_bltlib.so|ecf826abbb4c0fcbf7212de21292b8a6455200e7
 vendor/lib/libCB.so|f5a7dd8386cc9141e3213a0640e457a5482c9c02
 vendor/lib/libgsl.so|9a17b6b2495e582a9c0083db3b19f381f9833343
 vendor/lib/libllvm-glnext.so|e2a60debb7fbb43438c9ffd3c07a786896b403f0
+vendor/lib/libllvm-qgl.so|cb85c0ffabb592ff7e59484659b8178bf42ac81c
 vendor/lib/libllvm-qcom.so|477d834b3387d83c4b67d85b28b0b479f6377c03
 vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
 vendor/lib/libqseed3.so|3068e96424f57aa913fd07b32de7694c988e0147
@@ -291,6 +292,7 @@ vendor/lib64/libc2d30_bltlib.so|701b25c5616284aa0b753f5419b89d3a33edf2b0
 vendor/lib64/libCB.so
 vendor/lib64/libgsl.so|56af6b97d5ce9dfb4fe0a12f53505e3c0a2332ae
 vendor/lib64/libllvm-glnext.so|59af6a7fcca82d002249d44ff9988caa96d52dcf
+vendor/lib64/libllvm-qgl.so|b1f1954d20f0c609c6edee0ced511c22430f202f
 vendor/lib64/libllvm-qcom.so|3fa6c4dff861c53dd17acc357c1e033da4fdd9ef
 vendor/lib64/libOpenCL.so
 vendor/lib64/libqseed3.so|8c45ff3b62f8ed36f6b46bfa030e9e8b8e7e3187
