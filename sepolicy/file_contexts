@@ -27,9 +27,6 @@
 # Charge-only mode
 /data/chargeonlymode(/.*)?                               u:object_r:chargeonly_data_file:s0
 
-# Fingerprint
-/data/fpc/socket                                         u:object_r:fpc_socket:s0
-
 # Modem
 /persist/mdm(/.*)?                                       u:object_r:persist_modem_file:s0
 
