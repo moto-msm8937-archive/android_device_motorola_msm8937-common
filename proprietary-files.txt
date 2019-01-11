@@ -489,6 +489,7 @@ vendor/lib64/libqmi_encdec.so
 # Radio
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
+etc/permissions/qti_libpermissions.xml|73944fe161d14ff803093a3cd0b3f3851acb0394
 framework/qcrilhook.jar
 framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
 framework/QtiTelephonyServicelibrary.jar
@@ -633,6 +634,11 @@ vendor/lib64/libthermalioctl.so|1ce39d2a088f8e943be9a4c4b6d3c212a9881d95
 vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
+
+# TUI Comm
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|f3741de823b66f8ab6be1d9a38591c3674f52c4f
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e0a9fddd1ccbeb77766e3e8961553437d817948f
 
 # WCNSS
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
