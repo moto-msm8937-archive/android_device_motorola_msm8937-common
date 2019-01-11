@@ -110,7 +110,7 @@ vendor/lib64/libcneqmiutils.so
 vendor/lib64/libxml.so
 
 # DRM
-vendor/bin/qseecomd
+vendor/bin/qseecomd|a0f8b115cd819aeb828986006002321bb52c00b6
 vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -123,14 +123,17 @@ vendor/lib/libsecureui_svcsock.so
 vendor/lib/libSecureUILib.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
-vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmfs.so|d4af2c8b2a6f84a7f6f3112ba23b6a1d6d08144c
 vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libqisl.so
-vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libQSEEComAPI.so|8ccfb412e2ebc7d005925a86e33e009c07895bc1
 vendor/lib64/librpmb.so
-vendor/lib64/libSecureUILib.so
+vendor/lib64/libsecureui.so|cf05d3a1d8decd9323e6797c9cdd4b888726b234
+vendor/lib64/libsecureui_svcsock.so|36535fd48dbd86b490f2f4737382065fe817d3c8
+vendor/lib64/libSecureUILib.so|f2f421fcdc43fe9ef1d30bc2f50ed1c4cd941041
+vendor/lib64/libStDrvInt.so|aa429db14b38681b4fc8b8c27c3cb95803f633b3
 vendor/lib64/libssd.so
 
 # DRM - HDCP
@@ -167,7 +170,8 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|61c05ec60116a7ea30d46119270fba01f0ca5
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8937.so
-vendor/lib64/hw/gatekeeper.msm8937.so
+vendor/lib64/android.hardware.gatekeeper@1.0-impl-qti.so|58a7d078218ea77748b06868f43930287f9e4eaa
+vendor/lib64/hw/gatekeeper.msm8937.so|6f37b74a986d7b5852f107ca87792f97b036ba93
 
 # GPS
 etc/cacert_location.pem:vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
@@ -366,7 +370,7 @@ vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so
 
 # Keystore
 vendor/lib/hw/keystore.msm8937.so
-vendor/lib64/hw/keystore.msm8937.so
+vendor/lib64/hw/keystore.msm8937.so|67359152c445ab92ac9dfa5cc978b20229bc8e59
 
 # Media
 lib/libvpplibrary.so
