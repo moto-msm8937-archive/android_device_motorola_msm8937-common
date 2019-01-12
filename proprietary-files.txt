@@ -573,7 +573,7 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
 -app/embms/embms.apk
--priv-app/ims/ims.apk|eef47c0b6f250e7f96e7155d84274b1c83940d8f
+-priv-app/ims/ims.apk|55a45a49d6975ea8cf0bbd381418470511001c57
 -app/imssettings/imssettings.apk
 etc/permissions/embms.xml
 etc/permissions/ims.xml
