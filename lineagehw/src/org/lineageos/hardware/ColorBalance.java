@@ -17,8 +17,6 @@
 
 package org.lineageos.hardware;
 
-import vendor.lineage.livedisplay.V1_0.Feature;
-
 /**
  * Color balance support
  *
@@ -29,16 +27,13 @@ import vendor.lineage.livedisplay.V1_0.Feature;
  */
 public class ColorBalance {
 
-    private static final boolean sHasNativeSupport =
-            LiveDisplayVendorImpl.getInstance().hasNativeFeature(Feature.COLOR_BALANCE);
-
     /**
      * Whether device supports color balance control
      *
      * @return boolean Supported devices must return always true
      */
     public static boolean isSupported() {
-        return sHasNativeSupport;
+        return false;
     }
 
     /**
@@ -48,9 +43,6 @@ public class ColorBalance {
      * towards warmer temperatures, positive values move towards cooler temperatures.
      */
     public static int getValue() {
-        if (sHasNativeSupport) {
-            return LiveDisplayVendorImpl.getInstance().getColorBalance();
-        }
         return 0;
     }
 
@@ -62,9 +54,6 @@ public class ColorBalance {
      * failed; true in any other case.
      */
     public static boolean setValue(int value) {
-        if (sHasNativeSupport) {
-            return LiveDisplayVendorImpl.getInstance().setColorBalance(value);
-        }
         return false;
     }
 
@@ -73,9 +62,6 @@ public class ColorBalance {
      * @return int
      */
     public static int getMinValue() {
-        if (sHasNativeSupport) {
-            return LiveDisplayVendorImpl.getInstance().getColorBalanceRange().getLower();
-        }
         return 0;
     }
 
@@ -84,9 +70,6 @@ public class ColorBalance {
      * @return int
      */
     public static int getMaxValue() {
-        if (sHasNativeSupport) {
-            return LiveDisplayVendorImpl.getInstance().getColorBalanceRange().getUpper();
-        }
         return 0;
     }
 }
