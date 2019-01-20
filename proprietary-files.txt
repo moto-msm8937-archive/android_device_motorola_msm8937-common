@@ -626,10 +626,10 @@ vendor/lib64/libthermalclient.so|e1123e8b39a39d4907092271922e47190e19d1c5
 vendor/lib64/libthermalioctl.so|1ce39d2a088f8e943be9a4c4b6d3c212a9881d95
 
 # Time service
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/lib/libtime_genoff.so
-vendor/lib64/libtime_genoff.so
+-vendor/app/TimeService/TimeService.apk|94c3f66b2172a93e78c25d948905867b31b47fa8
+vendor/bin/time_daemon|038a4f90c6e038fe7e75984a8c1a66e89dd925fb
+vendor/lib/libtime_genoff.so|ded36d07a5d72da61798be1aac4593f462dec9b8
+vendor/lib64/libtime_genoff.so|362d37e80859957576499a0969aaaaa75b0bb27e
 
 # TUI Comm
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|f3741de823b66f8ab6be1d9a38591c3674f52c4f
