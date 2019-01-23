@@ -109,3 +109,9 @@
 /(vendor|system/vendor)/bin/qmi_motext_hook u:object_r:rild_exec:s0
 
 /sys/kernel/debug/rmt_storage(/.*)? u:object_r:debugfs_rmt_storage:s0
+
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service.msm8937   u:object_r:hal_vibrator_default_exec:s0
+/sys/devices/virtual/timed_output/vibrator/vtg_default                            u:object_r:sysfs_vibrator:s0
+/sys/devices/virtual/timed_output/vibrator/vtg_level                            u:object_r:sysfs_vibrator:s0
+/sys/devices/virtual/timed_output/vibrator/vtg_min                            u:object_r:sysfs_vibrator:s0
+/sys/devices/virtual/timed_output/vibrator/vtg_max                            u:object_r:sysfs_vibrator:s0
