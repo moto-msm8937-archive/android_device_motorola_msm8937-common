@@ -619,6 +619,11 @@ vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
+# Soter
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|6dd2ec266b2597210edf80f83f81ddc9a7893bbb
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|167a17c4d7c270ac7074389826152d5bf72ffa48
+
 # Thermal engine
 vendor/bin/thermal-engine|676d4cdfb4c97f6ad1d9f22f79844ae80e834c2b
 vendor/lib/libthermalclient.so|b41ea4c90353b8e057f774979d8ce5d3a006f70c
