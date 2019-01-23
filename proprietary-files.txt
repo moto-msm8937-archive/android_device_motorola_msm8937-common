@@ -643,6 +643,11 @@ etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin
 etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
 
+# Wi-Fi
+vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so|0daafba7c1716d9dab9e21e921efb6070b28b274
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.0.so|d475c890ef0212ea79f2bd4d67d11da1d0783452
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so|58390c83cfb11e9aed89be6bf2202afc237b223c
+
 # Wi-Fi Display
 vendor/lib/libFileMux.so
 vendor/lib/libmmosal.so
