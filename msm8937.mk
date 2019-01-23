@@ -182,9 +182,7 @@ PRODUCT_COPY_FILES += \
 
 # Health HAL
 PRODUCT_PACKAGES += \
-    android.hardware.health@1.0-convert \
-    android.hardware.health@1.0-impl \
-    android.hardware.health@1.0-service
+    android.hardware.health@2.0-service.msm8937
 
 # HIDL
 PRODUCT_PACKAGES += \
