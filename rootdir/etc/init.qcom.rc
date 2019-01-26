@@ -643,7 +643,7 @@ service tftp_server /vendor/bin/tftp_server
    user root
    writepid /dev/cpuset/system-background/tasks
 
-service per_mgr /vendor/bin/pm-service
+service vendor.per_mgr /vendor/bin/pm-service
     class core
     user system
     group system net_raw
@@ -656,7 +656,7 @@ service per_proxy /vendor/bin/pm-proxy
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-on property:init.svc.per_mgr=running
+on property:init.svc.vendor.per_mgr=running
     start per_proxy
 
 on property:sys.shutdown.requested=*
