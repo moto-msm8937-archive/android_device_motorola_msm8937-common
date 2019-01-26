@@ -18,4 +18,4 @@ allow system_server vendor_file:file { getattr open read execute };
 
 allow system_server zygote:process getpgid;
 
-get_prop(system_server, alarm_boot_prop)
+get_prop(system_server, vendor_alarm_boot_prop)
