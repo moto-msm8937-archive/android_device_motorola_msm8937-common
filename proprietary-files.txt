@@ -107,6 +107,7 @@ vendor/lib64/libxml.so
 
 # DRM
 vendor/bin/qseecomd|a0f8b115cd819aeb828986006002321bb52c00b6
+vendor/lib/libcpion.so|50b1b21ac8c7fb2a1a1c0bba9c788fa45ae7ffb5
 vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -119,6 +120,7 @@ vendor/lib/libsecureui_svcsock.so
 vendor/lib/libSecureUILib.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
+vendor/lib64/libcpion.so|994e30c3b6c465a1bf538897d286313649bf4f7b
 vendor/lib64/libdrmfs.so|d4af2c8b2a6f84a7f6f3112ba23b6a1d6d08144c
 vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel.so
@@ -132,13 +134,25 @@ vendor/lib64/libSecureUILib.so|f2f421fcdc43fe9ef1d30bc2f50ed1c4cd941041
 vendor/lib64/libStDrvInt.so|aa429db14b38681b4fc8b8c27c3cb95803f633b3
 vendor/lib64/libssd.so
 
+# DRM - Clearkey
+vendor/bin/hw/android.hardware.drm@1.1-service.clearkey|1ee09abf9c0eebc95f0213c9ce56e3e3cf6e7fd2
+vendor/etc/init/android.hardware.drm@1.1-service.clearkey.rc|acf0c3c835d4cf105b8832b9fd16046042aad629
+vendor/lib/mediadrm/libdrmclearkeyplugin.so|8b706561f7081ad314c49e3ccf93da2e3ce34567
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so|77df16678eb1a9c90cd2d5bc90b9095ec8552b6b
+
 # DRM - HDCP
+vendor/lib/libhdcpsrm.so|6b7521fac55abfd1b0417d56144b912f9d766d72
+vendor/lib64/libhdcpsrm.so|08a864aca6990fc7166b878f4b29379efe4b6a2c
 vendor/lib64/libmm-hdcpmgr.so
 
 # DRM - Widevine
-vendor/lib/liboemcrypto.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine|78db59bd6a1ca8f4514455dd42741d6be216db4e
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
+vendor/lib/liboemcrypto.so|81f1f08d61cf664621ed323394813b8a6c5cc092
+vendor/lib/mediadrm/libwvdrmengine.so|2d621efc9a925bf02271a9084dd516e4a76ece9d
+vendor/lib64/liboemcrypto.so|82347f43a71f85c4ff9b94b6945a4ee136afe77d
+vendor/lib64/mediadrm/libwvdrmengine.so|9a5b63820a2a9af6ac486addb8ee38c2475eac37
+vendor/lib64/libwvhidl.so|3aa3fd28263328144f18ad8b6c5908174ceac4a3
 
 # DSP
 vendor/lib/libsdsprpc.so
@@ -316,6 +330,8 @@ vendor/lib64/libsdmextension.so|f2f170f2d65bb22c07594ac4d08ae8b8357b034e
 vendor/lib64/libtinyxml2_1.so|1cf417716eca9616f5e20b34855862d07a33e8bc
 vendor/lib64/vendor.display.color@1.0.so|0316423c6bf2f4af29c005f59ccd4a6924d1e008
 vendor/lib64/vendor.display.color@1.1.so|2c31ab8c795a6684a01c2a330f5e2942d34ed622
+vendor/lib64/vendor.display.config@1.2.so|37eb6ade64d7ddff3f6bac4eba2e6cb31c038dbe
+vendor/lib64/vendor.display.config@1.3.so|bb4949989247c6be39417f0e8da58384d1ad7329
 vendor/lib64/vendor.display.postproc@1.0.so|de9a0d12dcb4471a02b395878ec80fe9fc19b07c
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|12674982b974c4121467564b60bd966c6d884662
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
