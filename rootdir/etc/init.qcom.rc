@@ -224,18 +224,6 @@ on boot
     chown system system /sys/homebutton/key_screenoff_left
     chown system system /sys/homebutton/key_screenoff_right
 
-    # Screen off Gestures
-    chown system radio /sys/android_touch/doubletap2wake
-    chmod 0660 /sys/android_touch/doubletap2wake
-    chown system radio /sys/android_touch/gesture_swipe_right
-    chmod 0660 /sys/android_touch/gesture_swipe_right
-    chown system radio /sys/android_touch/gesture_swipe_left
-    chmod 0660 /sys/android_touch/gesture_swipe_left
-    chown system radio /sys/android_touch/gesture_swipe_down
-    chmod 0660 /sys/android_touch/gesture_swipe_down
-    chown system radio /sys/android_touch/gesture_swipe_up
-    chmod 0660 /sys/android_touch/gesture_swipe_up
-
     # Display
     chown system graphics /sys/class/graphics/fb1/hpd
     chmod 0664 /sys/class/graphics/fb1/hpd
