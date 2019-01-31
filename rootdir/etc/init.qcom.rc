@@ -570,12 +570,6 @@ service vendor.adsprpcd /vendor/bin/adsprpcd
     user media
     group media
 
-service vendor.energy-awareness /vendor/bin/energy-awareness
-    class main
-    user root
-    group system
-    oneshot
-
 service vendor.irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
