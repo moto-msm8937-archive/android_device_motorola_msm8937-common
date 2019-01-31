@@ -442,7 +442,6 @@ etc/init/perfservice.rc|81b7d732069783873184c4f51710236ee6139e49
 -framework/QPerformance.jar|80d68f93ab2f43909efced6c86d16dc2aab0867c
 -framework/UxPerformance.jar|4b6384b0f0f2476f5c785837024fbe87c338891b
 lib64/vendor.qti.hardware.perf@1.0.so
-vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|d2ed16c363bb869bfb926bde0c4a3d32b3b947a
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
 vendor/lib/libqti-at.so
