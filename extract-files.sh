@@ -67,6 +67,8 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 COMMON_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary"
 
 patchelf --replace-needed libui.so libui-v27.so "${COMMON_BLOB_ROOT}/vendor/lib64/lib-imsvideocodec.so"
+patchelf --add-needed libshim_adsp.so "${COMMON_BLOB_ROOT}/vendor/bin/adspd"
+patchelf --add-needed libqsap_shim.so "${COMMON_BLOB_ROOT}/vendor/lib64/libmdmcutback.so"
 
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
