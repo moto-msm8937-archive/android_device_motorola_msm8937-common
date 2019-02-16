@@ -573,7 +573,7 @@ vendor/lib64/lib-imsrcscm.so
 vendor/lib64/lib-imsrcscmclient.so
 vendor/lib64/lib-imsrcscmservice.so
 vendor/lib64/lib-imss.so
-vendor/lib64/lib-imsvideocodec.so
+vendor/lib64/lib-imsvideocodec.so|7aae8b3177c1f50c3031bd1f84e1275f3c94393c
 vendor/lib64/lib-imsvt.so
 vendor/lib64/lib-imsvtextutils.so
 vendor/lib64/lib-imsvtutils.so
