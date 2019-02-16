@@ -5,7 +5,7 @@ vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
-vendor/bin/adspd
+vendor/bin/adspd|0ac89526c2b100dc836c226f88d54455422d181a
 vendor/bin/adsprpcd
 vendor/bin/audioflacapp
 vendor/lib/libacdb-fts.so
@@ -496,7 +496,7 @@ vendor/lib64/libadropbox.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/liblqe.so
-vendor/lib64/libmdmcutback.so
+vendor/lib64/libmdmcutback.so|397c0b4b6615b40983d9b9ceb15a7ef7b6faf62d
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libmotext_inf.so
 vendor/lib64/libnetmgr.so
