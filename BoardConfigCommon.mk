@@ -115,6 +115,7 @@ endif
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_USES_METADATA_AS_FDE_KEY := true
 
 # FM Radio
 BOARD_HAVE_QCOM_FM := true
