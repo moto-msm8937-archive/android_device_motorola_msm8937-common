@@ -75,6 +75,9 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_HW_DISK_ENCRYPTION := true
 TW_INCLUDE_CRYPTO := true
 
+# Lun
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
+
 # Partitions
 # These sizes don't really matter for building TWRP
 BOARD_FLASH_BLOCK_SIZE := 131072
