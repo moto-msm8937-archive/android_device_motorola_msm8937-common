@@ -679,7 +679,7 @@ vendor/lib/libmmparser.so
 vendor/lib/libmmparser_lite.so
 vendor/lib/libmmrtpdecoder.so
 vendor/lib/libmmrtpencoder.so
-vendor/lib/libOmxVideoDSMode.so|4ea8e5946bea62b837df4787129874bd7225a56e
+vendor/lib/libOmxVideoDSMode.so|e553e97cd36c23549d74231758fa061ea3bbd74b
 vendor/lib/libwfdavenhancements.so
 vendor/lib/libwfdcommonutils.so
 vendor/lib/libwfdhdcpcp.so
