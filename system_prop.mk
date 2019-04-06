@@ -123,7 +123,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.recomputecrop=0 \
     debug.enable.sglscale=1 \
     persist.debug.wfd.enable=1 \
-    vendor.video.disable.ubwc=1
+    vendor.video.disable.ubwc=1 \
+    vendor.gralloc.disable_wb_ubwc=1 \
+    persist.sys.wfd.nohdcp=1
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
