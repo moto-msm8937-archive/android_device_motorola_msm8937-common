@@ -73,8 +73,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     libaudio-resampler \
     libshim_adsp \
-    libtinycompress \
-    audiod
+    libtinycompress
 
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
