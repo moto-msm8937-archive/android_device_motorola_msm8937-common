@@ -429,10 +429,6 @@ vendor/lib64/libvpptestutils.so
 # Motorola Camera
 vendor/etc/permissions/com.motorola.cameraone.xml
 
-# msm_irqbalance
-vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f
-vendor/etc/msm_irqbalance.conf
-
 # Offline charging
 vendor/bin/charge_only_mode
 
