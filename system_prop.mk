@@ -121,7 +121,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.video.ubwc=0 \
     persist.hwc.enable_vds=1 \
     debug.sf.recomputecrop=0 \
-    debug.enable.sglscale=1
+    debug.enable.sglscale=1 \
+    persist.debug.wfd.enable=1 \
+    vendor.video.disable.ubwc=1
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
