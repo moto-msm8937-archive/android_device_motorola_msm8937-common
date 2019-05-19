@@ -51,17 +51,17 @@ vendor/lib64/libldacBT_enc.so
 # Camera
 lib/lib_mottof.so
 lib/libadvalgcore.so
-lib/libarcsoft_beautyshot.so
-lib/libfamily_photo.so
-lib/libmot-qc-fd-offline.so
-lib/libmot_afd.so
-lib/libmpbase.so
-lib/libzxingcpp.so
+lib/libarcsoft_beautyshot.so:vendor/lib/libarcsoft_beautyshot.so
+lib/libfamily_photo.so:vendor/lib/libfamily_photo.so
+lib/libmot-qc-fd-offline.so:vendor/lib/libmot-qc-fd-offline.so
+lib/libmot_afd.so:vendor/lib/libmot_afd.so
+lib/libmpbase.so:vendor/lib/libmpbase.so
+lib/libzxingcpp.so:vendor/lib/libzxingcpp.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so
 
 # CNE
-etc/cne/SwimConfig.xml
-etc/cne/andsfCne.xml
+etc/cne/SwimConfig.xml:vendor/etc/cne/SwimConfig.xml
+etc/cne/andsfCne.xml:vendor/etc/cne/andsfCne.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
 framework/cneapiclient.jar
@@ -759,7 +759,7 @@ framework/ConnectivityExt.jar
 framework/com.qti.dpmframework.jar
 framework/dpmapi.jar
 framework/tcmclient.jar
-lib/lib_mot_app6_metadata.so
+lib/lib_mot_app6_metadata.so:vendor/lib/lib_mot_app6_metadata.so
 lib/libjson.so
 lib/libmemalloc.so
 lib/libmotaudioutils.so
