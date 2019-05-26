@@ -586,7 +586,7 @@ framework/imscmlibrary.jar
 framework/rcsimssettings.jar
 lib64/com.qualcomm.qti.imscmservice@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
-vendor/bin/ims_rtp_daemon
+vendor/bin/ims_rtp_daemon|fa242ed87d5dcbd1d63206ed8bd16fbabe70abc3
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
