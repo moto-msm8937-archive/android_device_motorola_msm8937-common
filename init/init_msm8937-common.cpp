@@ -87,4 +87,33 @@ void vendor_load_properties()
     static const unsigned montana = (device == "montana");
     static const unsigned owens = (device == "owens");
     static const unsigned perry = (device == "perry");
+
+    if (cedric) {
+    // sku
+    std::string sku = "Moto G5 (";
+    sku.append(android::base::GetProperty("ro.boot.hardware.sku", ""));
+    sku.append(")");
+    property_override_dual("ro.product.model","ro.vendor.product.model", sku.c_str());
+    }
+    if (montana) {
+    // sku
+    std::string sku = "Moto G5S (";
+    sku.append(android::base::GetProperty("ro.boot.hardware.sku", ""));
+    sku.append(")");
+    property_override_dual("ro.product.model","ro.vendor.product.model", sku.c_str());
+    }
+    if (owens) {
+    // sku
+    std::string sku = "Moto E4 Plus (";
+    sku.append(android::base::GetProperty("ro.boot.hardware.sku", ""));
+    sku.append(")");
+    property_override_dual("ro.product.model","ro.vendor.product.model", sku.c_str());
+    }
+    if (perry) {
+    // sku
+    std::string sku = "Moto E4 (";
+    sku.append(android::base::GetProperty("ro.boot.hardware.sku", ""));
+    sku.append(")");
+    property_override_dual("ro.product.model","ro.vendor.product.model", sku.c_str());
+    }
 }
