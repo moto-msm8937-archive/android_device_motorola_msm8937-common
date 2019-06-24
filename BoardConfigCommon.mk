@@ -195,6 +195,11 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libjustshoot.so|libjustshoot_shim.so \
     /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(COMMON_PATH)/libhidl \
+    $(COMMON_PATH)/libshims
+
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
 
