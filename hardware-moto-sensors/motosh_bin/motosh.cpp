@@ -290,7 +290,7 @@ int stm_getFwFile(char *fileName, FirmwareType type) {
             ret = snprintf(fileName, STM_MAX_PATH, "/data/misc/sensorhub/sensorhubfw.bin");
             break;
         case FW_STOCK:
-            ret = snprintf(fileName, STM_MAX_PATH, "/system/etc/firmware/sensorhubfw.bin");
+            ret = snprintf(fileName, STM_MAX_PATH, "/vendor/firmware/sensorhubfw.bin");
             break;
         default:
             return -1; // Invalid firmware type
