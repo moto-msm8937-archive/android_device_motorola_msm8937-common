@@ -224,7 +224,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     persist.data.mode=concurrent \
     persist.data.iwlan.enable=true \
-    persist.dbg.wfc_avail_ovr=1
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.radio.aosp_usr_pref_sel=true
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
