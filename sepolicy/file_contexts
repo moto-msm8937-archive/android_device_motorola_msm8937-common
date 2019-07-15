@@ -24,18 +24,14 @@
 # Camera
 /sys/kernel/range(/.*)?                                 u:object_r:sysfs_mmi_laser:s0
 
-# CMActions
+# LineageActions
 /sys/homebutton(/.*)?                                    u:object_r:sysfs_homebutton:s0
 
 # Motorola services
 /data/chargeonlymode(/.*)?                               u:object_r:chargeonly_data_file:s0
 
 # Fingerprint
-/data/.fps(/.*)?                                         u:object_r:fingerprintd_data_file:s0
-/data/fpc                                                u:object_r:fingerprintd_data_file:s0
 /data/fpc/socket                                         u:object_r:fpc_socket:s0
-
-/sys/devices/soc/7af8000.spi/spi_master/spi8/spi8.0(/.*)? u:object_r:sysfs_fpc:s0
 
 # Modem
 /persist/mdm(/.*)?                                       u:object_r:persist_modem_file:s0
@@ -124,12 +120,6 @@
 # WCNSS
 /sys/module/wcnsscore/parameters(/.*)?                   u:object_r:sysfs_wcnsscore:s0
 
-# Screen off gestures
-/sys/android_touch/gesture_swipe_right                   u:object_r:sysfs_screen_off_gestures:s0
-/sys/android_touch/gesture_swipe_left                    u:object_r:sysfs_screen_off_gestures:s0
-/sys/android_touch/gesture_swipe_down                    u:object_r:sysfs_screen_off_gestures:s0
-/sys/android_touch/gesture_swipe_up                      u:object_r:sysfs_screen_off_gestures:s0
-
 /data/misc/perfd(/.*)?                                          u:object_r:perfd_data_file:s0
 /data/system/perfd(/.*)?                                        u:object_r:perfd_data_file:s0
 /data/oemnvitems(/.*)?                                          u:object_r:nv_data_file:s0
@@ -144,7 +134,3 @@
 /sys/kernel/debug/rmt_storage(/.*)? u:object_r:debugfs_rmt_storage:s0
 
 /data/vendor/nfc(/.*)? u:object_r:nfc_data_file:s0
-
-# Fingerprint custom hal
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service_32 u:object_r:hal_fingerprint_default_exec:s0
-

@@ -42,13 +42,7 @@ type sysfs_batt, fs_type, sysfs_type;
 type sysfs_cnss, fs_type, sysfs_type;
 type sysfs_fpc, fs_type, sysfs_type;
 
-type fpc_socket, file_type;
-type fpc_data_file, file_type;
-
 type sysfs_wcnsscore, fs_type, sysfs_type;
-
-# Screen off gestures
-type sysfs_screen_off_gestures, fs_type, sysfs_type, mlstrustedobject;
 
 type nv_data_file, file_type;
 type sysfs_rmt_storage, fs_type, sysfs_type;

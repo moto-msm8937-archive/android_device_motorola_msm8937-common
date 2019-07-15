@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter potter cedric montana sanders perry ,$(TARGET_DEVICE)),)
+ifneq ($(filter cedric montana owens perry ,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -58,10 +58,10 @@ $(FIRMWARE_FINGERPRINT_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_FINGERPRINT_SYMLINKS)
 
 FIRMWARE_MODEM_IMAGES := \
-    modem.b00 modem.b01 modem.b02 modem.b04 modem.b05 modem.b06 \
-    modem.b07 modem.b08 modem.b09 modem.b10 modem.b11 modem.b12 \
-    modem.b13 modem.b16 modem.b17 modem.b18 modem.b19 modem.b20 \
-    modem.mdt
+    modem.b00 modem.b01 modem.b02 modem.b03 modem.b04 modem.b05 \
+    modem.b06 modem.b07 modem.b08 modem.b09 modem.b10 modem.b11 \
+    modem.b12 modem.b13 modem.b16 modem.b17 modem.b18 modem.b19 \
+    modem.b20 modem.mdt
 
 FIRMWARE_MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_MODEM_IMAGES)))
 $(FIRMWARE_MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)

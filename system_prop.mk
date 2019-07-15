@@ -1,5 +1,5 @@
 #
-# system.prop for msm8953-common
+# system.prop for msm8937-common
 #
 
 # Audio
@@ -90,12 +90,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.heapgrowthlimit=192m \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapsize=384m \
     dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heaptargetutilization=0.75
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.image-dex2oat-threads=8
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -161,7 +164,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.qcom_parser=135715 \
     mm.enable.sec.smoothstreaming=false \
     mm.enable.smoothstreaming=false \
-    mmp.enable.3g2=true
+    mmp.enable.3g2=true \
+    ro.config.vc_call_vol_steps=7 \
+    ro.config.media_vol_steps=20
 
 # NITZ
 PRODUCT_PROPERTY_OVERRIDES += \
