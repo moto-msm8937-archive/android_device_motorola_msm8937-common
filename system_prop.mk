@@ -167,6 +167,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3=""
 
+# Permissions
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=enforce
+
 # Qualcomm
 PRODUCT_PROPERTY_OVERRIDES += \
     com.qc.hardware=true \
