@@ -24,10 +24,3 @@ cc_library_shared {
     name: "libjustshoot_shim",
     vendor: true,
 }
-
-cc_library_shared {
-    srcs: ["gpu_mapper_shim.cpp"],
-    shared_libs: ["libgui", "libutils"],
-    name: "libgpu_mapper_shim",
-    vendor: true,
-}
