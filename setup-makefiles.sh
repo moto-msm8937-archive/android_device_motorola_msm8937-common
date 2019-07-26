@@ -48,6 +48,7 @@ write_footers
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false
+    DEVICE_BRINGUP_YEAR=$INITIAL_COPYRIGHT_YEAR
 
     # Copyright headers and guards
     write_headers
