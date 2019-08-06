@@ -24,8 +24,6 @@ type cutback_data_file, file_type, data_file_type;
 
 type dbvc_data_file, file_type, data_file_type;
 
-type akmd_data_file, file_type, data_file_type;
-
 type wapi_supplicant_data_file, file_type, data_file_type;
 
 # RIL

@@ -12,7 +12,6 @@
 /system/vendor/bin/init\.mmi\.laser\.sh                         u:object_r:mmi_laser_exec:s0
 /system/vendor/bin/wlan_carrier_bin\.sh                         u:object_r:init_wifi_exec:s0
 /system/vendor/bin/motosh                                       u:object_r:sensor_hub_exec:s0
-/system/vendor/bin/akmd09912                                    u:object_r:akmd_exec:s0
 /system/vendor/bin/init\.qti\.fm\.sh		u:object_r:qti_init_shell_exec:s0
 /system/vendor/bin/hw/motorola\.hardware\.camera\.provider@2\.4-service u:object_r:hal_camera_default_exec:s0
 /system/vendor/lib/motorola\.hardware\.camera\.device@1\.0.so                  u:object_r:hal_camera_default_exec:s0
@@ -51,8 +50,6 @@
 /persist/\.bt_nv\.bin                                    u:object_r:bluetooth_data_file:s0
 
 /data/wapi_certificate(/.*)?                             u:object_r:wapi_supplicant_data_file:s0
-
-/data/misc/akmd(/.*)?                                    u:object_r:akmd_data_file:s0
 
 /data/local/dbvc(/.*)?                                   u:object_r:dbvc_data_file:s0
 /data/local/moodle(/.*)?                                 u:object_r:moodle_data_file:s0

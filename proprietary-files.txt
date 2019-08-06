@@ -130,7 +130,6 @@ lib64/vendor.qti.imsrtpservice@1.0.so
 vendor/bin/ATFWD-daemon
 vendor/bin/adspd
 vendor/bin/adsprpcd
-vendor/bin/akmd09912
 vendor/bin/audioflacapp
 vendor/bin/charge_only_mode
 vendor/bin/cnd
