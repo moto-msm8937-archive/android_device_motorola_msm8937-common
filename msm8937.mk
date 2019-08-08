@@ -273,7 +273,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service-qti
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml
+    $(LOCAL_PATH)/configs/powerhint.xml:system/vendor/etc/powerhint.xml
 
 # Ramdisk
 PRODUCT_PACKAGES += \
