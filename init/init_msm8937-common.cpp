@@ -55,19 +55,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
     property_override(vendor_prop, value);
 }
 
-void num_sims() {
-    std::string dualsim;
-
-    dualsim = android::base::GetProperty("ro.boot.dualsim", "");
-    property_set("ro.hw.dualsim", dualsim.c_str());
-
-    if (dualsim == "true") {
-        property_set("persist.radio.multisim.config", "dsds");
-    } else {
-        property_set("persist.radio.multisim.config", "");
-    }
-}
-
 void vendor_load_properties()
 {
     std::string platform = android::base::GetProperty("ro.board.platform", "");
@@ -85,8 +72,6 @@ void vendor_load_properties()
     property_set("ro.hw.device", device.c_str());
     property_set("ro.hw.radio", radio.c_str());
 
-    num_sims();
-
     // devices
     static const unsigned cedric = (device == "cedric");
     static const unsigned montana = (device == "montana");
@@ -95,8 +80,6 @@ void vendor_load_properties()
 
     if (cedric) {
         // fingerprint
-        property_override("ro.build.description", "cedric-7.0/NPPS25.137-72-4/4:user/release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/cedric/cedric:7.0/NPPS25.137-72-4/4:user/release-keys");
         property_set("ro.hw.ecompass", "false");
         property_set("ro.hw.fps", "true");
         property_set("ro.hw.imager", "13MP");
@@ -104,15 +87,11 @@ void vendor_load_properties()
     }
     if (montana) {
         // fingerprint
-        property_override("ro.build.description", "montana-7.1.1/NPPS26.102-49-11/11:user/release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/montana/montana:7.1.1/NPPS26.102-49-11/11:user/release-keys");
         property_set("ro.hw.fps", "true");
         property_set("ro.hw.imager", "16MP");
     }
     if (owens) {
         // fingerprint
-        property_override("ro.build.description", "owens-7.1.1/NPRS26.58-45-21/25:user/release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/owens/owens:7.1.1/NPRS26.58-45-21/25:user/release-keys");
         property_set("ro.hw.ecompass", "true");
         property_set("ro.hw.fps", "true");
         property_set("ro.hw.imager", "13MP");
@@ -120,8 +99,6 @@ void vendor_load_properties()
     }
     if (perry) {
         // fingerprint
-        property_override("ro.build.description", "perry-7.1.1/NPNS26.118-22-1/1:user/release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/perry/perry:7.1.1/NPNS26.118-22-1/1:user/release-keys");
         property_set("ro.hw.ecompass", "true");
         property_set("ro.hw.imager", "8MP");
         property_set("ro.hw.nfc", "false");
