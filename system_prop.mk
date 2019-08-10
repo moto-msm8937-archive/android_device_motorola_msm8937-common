@@ -64,7 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.mot.startup_probing=0 \
     persist.camera.debug.logfile=0 \
     persist.camera.gyro.disable=0 \
-    persist.camera.HAL3.enabled=1 \
+    persist.camera.HAL3.enabled=0 \
     vidc.enc.dcvs.extra-buff-count=2 \
     vendor.vidc.enc.disable_bframes=1 \
     vendor.vidc.disable.split.mode=1 \
@@ -84,7 +84,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dpm.feature=0 \
     persist.sys.cnd.iwlan=1
 
-# core_ctrl
+# Core CTRL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.core_ctl_min_cpu=2 \
     ro.vendor.qti.core_ctl_max_cpu=4
@@ -234,7 +234,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
-#Trim properties
+# Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
@@ -254,4 +254,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.at_library=libqti-at.so \
     ro.vendor.gt_library=libqti-gt.so
-
