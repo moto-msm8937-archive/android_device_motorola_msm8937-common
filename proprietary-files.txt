@@ -45,7 +45,6 @@ etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin
 etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
 etc/permissions/ConnectivityExt.xml
 etc/permissions/cneapiclient.xml
-etc/permissions/com.motorola.hardware.dtv.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qti.snapdragon.sdk.display.xml
@@ -56,7 +55,6 @@ etc/permissions/embms.xml
 etc/permissions/ims.xml
 etc/permissions/imscm.xml
 etc/permissions/izat.xt.srv.xml
-etc/permissions/mot_dtv_permissions.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/qti_permissions.xml
 etc/xtra_root_cert.pem
@@ -124,8 +122,6 @@ lib64/vendor.qti.imsrtpservice@1.0.so
 -priv-app/atfwd/atfwd.apk
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--vendor/app/DTVPlayer/DTVPlayer.apk
--vendor/app/DTVService/DTVService.apk
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/adspd
@@ -315,8 +311,6 @@ vendor/lib/libdrmtime.so
 vendor/lib/libdrplugin_client.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
-vendor/lib/libdtvhal.so
-vendor/lib/libdtvtuner.so
 vendor/lib/libesepm.so
 vendor/lib/libevent_observer.so
 vendor/lib/libflp.so
@@ -576,8 +570,6 @@ vendor/lib64/libdrmtime.so
 vendor/lib64/libdrplugin_client.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
-vendor/lib64/libdtvhal.so
-vendor/lib64/libdtvtuner.so
 vendor/lib64/libevent_observer.so
 vendor/lib64/libfeedbackhandler.so
 vendor/lib64/libflp.so
