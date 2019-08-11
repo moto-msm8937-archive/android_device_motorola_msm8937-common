@@ -69,7 +69,6 @@
 /dev/rmi0                                                u:object_r:synaptics_rmi_device:s0
 /dev/sec                                                 u:object_r:shwi_device:s0
 /dev/kgsl                                                u:object_r:gpu_device:s0
-/dev/isdbt                                               u:object_r:isdbt_device:s0
 /dev/ttyHS3                                              u:object_r:adspd_device:s0
 /dev/drv2605                                             u:object_r:haptics_device:s0
 /dev/motcamera0                                          u:object_r:camera_device:s0
