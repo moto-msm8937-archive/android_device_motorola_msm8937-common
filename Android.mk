@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter addison albus cedric montana owens perry potter sanders, $(TARGET_DEVICE)),)
+ifneq ($(filter cedric montana owens perry, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 

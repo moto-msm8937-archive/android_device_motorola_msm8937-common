@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-VENDOR_PATH := device/motorola/msm8937-common
+COMMON_PATH := device/motorola/msm8937-common
 
 TARGET_RECOVERY_DEVICE_DIRS := \
-    $(VENDOR_PATH) \
+    $(COMMON_PATH) \
     $(DEVICE_PATH)
 
 TARGET_ARCH := arm64
@@ -49,7 +49,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_SEPARATED_DT := true
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 TARGET_CUSTOM_DTBTOOL := dtbtool_moto
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-androidkernel-
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
@@ -62,7 +62,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-TARGET_RECOVERY_FSTAB := device/motorola/msm8937-common/twrp.fstab
+TARGET_RECOVERY_FSTAB := $(COMMON_PATHZ)/recovery/root/etc/twrp.fstab
 
 RECOVERY_SDCARD_ON_DATA := true
 
