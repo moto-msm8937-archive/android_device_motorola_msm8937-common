@@ -20,6 +20,7 @@ TARGET_RECOVERY_DEVICE_DIRS := \
     $(COMMON_PATH) \
     $(DEVICE_PATH)
 
+# Architecture
 TARGET_ARCH := arm64
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -37,11 +38,16 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
+# Board
 TARGET_BOARD_PLATFORM := msm8937
-
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 TARGET_NO_BOOTLOADER := true
 
+# Encryption
+TARGET_HW_DISK_ENCRYPTION := true
+TW_INCLUDE_CRYPTO := true
+
+# Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 vmalloc=400M androidboot.bootdevice=7824900.sdhci movablecore=160M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_RAMDISK_OFFSET := 0x01000000
@@ -56,38 +62,30 @@ BOARD_DTBTOOL_ARGS := --force-v3 --motorola 1
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-androidkernel-
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
-LZMA_RAMDISK_TARGETS := recovery
-
-BOARD_USES_QCOM_HARDWARE := true
-TARGET_RECOVERY_QCOM_RTC_FIX := true
-
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
-
-TARGET_RECOVERY_FSTAB := $(COMMON_PATHZ)/recovery/root/etc/twrp.fstab
-
-RECOVERY_SDCARD_ON_DATA := true
-
-# don't take forever to wipe
-BOARD_SUPPRESS_SECURE_ERASE := true
-
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-TW_INCLUDE_CRYPTO := true
-
 # Lun
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 
 # Partitions
-# These sizes don't really matter for building TWRP
 BOARD_FLASH_BLOCK_SIZE := 131072
-BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216        #    16384 * 1024 mmcblk0p37
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16879616    #    16484 * 1024 mmcblk0p38
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4294967296    #  4194304 * 1024 mmcblk0p53
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 25614597120 # 25014255 * 1024 mmcblk0p54
+LZMA_RAMDISK_TARGETS := recovery
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+TW_INCLUDE_FUSE_EXFAT := true # exFAT support
+TW_INCLUDE_FUSE_NTFS := true # NTFS support
+
+# Qualcomm
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/etc/twrp.fstab
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # TWRP
-TARGET_RECOVERY_PIXEL_FORMAT := RGB_565
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TW_EXTRA_LANGUAGES := true
 TW_NEW_ION_HEAP := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_SCREEN_BLANK_ON_BOOT := true
