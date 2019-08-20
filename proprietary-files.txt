@@ -301,7 +301,7 @@ vendor/lib/libsdm-disp-apis.so|1607f187c911cb6b296203fd613f73163339bbb1
 vendor/lib/libsdm-disp-vndapis.so|6c4233ea3676643bc9658c25cfad7edd45c49362
 vendor/lib/libsdmextension.so|a8659e7e0df5f1e20266ede1331da0660e0fe260
 vendor/lib/libtinyxml2_1.so|410ef0b073d6930caf3279cba17c1b9301fcbbe4
-vendor/lib/vendor.display.color@1.0.so|c74b9402c4e242e72a41185b49dac51806cd77ee
+vendor/lib/vendor.display.color@1.0.so|5910d16429426831799379bef45a91fb73f1b96b
 vendor/lib/vendor.display.color@1.1.so|5cbf7dbcf436c7b52d2201e7b670d54a2c742994
 vendor/lib/vendor.display.postproc@1.0.so|84e2bec33b405cacc4b9087152f3216ebd8e20ad
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|ca1933a8339a22ca006da87142d7933f1a2a2bd
@@ -329,12 +329,13 @@ vendor/lib64/libsdm-disp-apis.so|b038141caecc116eea681497bcbeba208572e48d
 vendor/lib64/libsdm-disp-vndapis.so|6ae24866bbd413ed112778650c8fd7a2631cb1a9
 vendor/lib64/libsdmextension.so|e91aaf852df780e42bb083c3089f5b42c87c49f7
 vendor/lib64/libtinyxml2_1.so|b743b93bbb47bb2d80322fcfb985b7b8c696fa1b
-vendor/lib64/vendor.display.color@1.0.so|0316423c6bf2f4af29c005f59ccd4a6924d1e008
-vendor/lib64/vendor.display.color@1.1.so|2c31ab8c795a6684a01c2a330f5e2942d34ed622
+vendor/lib64/vendor.display.color@1.0.so|346620084ad60243985250d4082945e6b267c501
+vendor/lib64/vendor.display.color@1.1.so|8fda7c6969fa1ea2104c0c3ebb61f89bf3e22c7b
+vendor/lib64/vendor.display.color@1.2.so|796116f179007448a9fe71c63a18b29030322337
 vendor/lib64/vendor.display.config@1.2.so|37eb6ade64d7ddff3f6bac4eba2e6cb31c038dbe
 vendor/lib64/vendor.display.config@1.3.so|642de239547c1d5fde87695b129afa17970936f9
 vendor/lib64/vendor.display.config@1.4.so|1b0e244a8c97449d850717492bcc825d5e303f4e
-vendor/lib64/vendor.display.postproc@1.0.so|de9a0d12dcb4471a02b395878ec80fe9fc19b07c
+vendor/lib64/vendor.display.postproc@1.0.so|c6e7afb4b638425e68ca7cecd0931369db506851
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|12674982b974c4121467564b60bd966c6d884662
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
 
