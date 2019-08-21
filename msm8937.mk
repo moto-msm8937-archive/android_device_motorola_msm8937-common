@@ -364,5 +364,3 @@ PRODUCT_PACKAGES += \
     WCNSS_qcom_wlan_nv_Brazil.bin \
     WCNSS_qcom_wlan_nv_India.bin \
     WCNSS_wlan_dictionary.dat
-
-PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
