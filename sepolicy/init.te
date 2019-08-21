@@ -49,4 +49,3 @@ allow init { domain -lmkd -crash_dump }:process noatsecure;
 
 allow init hal_perf_hwservice:hwservice_manager find;
 allow init hidl_base_hwservice:hwservice_manager add;
-
