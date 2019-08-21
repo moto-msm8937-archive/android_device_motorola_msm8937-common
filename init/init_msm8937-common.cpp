@@ -62,10 +62,6 @@ void vendor_load_properties()
     if (platform != ANDROID_TARGET)
         return;
 
-    // sku
-    std::string sku = android::base::GetProperty("ro.boot.hardware.sku", "");
-    property_override_dual("ro.product.model", "ro.vendor.product.model", sku.c_str());
-
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
     std::string radio = android::base::GetProperty("ro.boot.radio", "");
