@@ -11,7 +11,6 @@
 /(vendor|system/vendor)/bin/init\.mmi\.boot\.sh                          u:object_r:mmi_boot_exec:s0
 /(vendor|system/vendor)/bin/init\.mmi\.laser\.sh                         u:object_r:mmi_laser_exec:s0
 /(vendor|system/vendor)/bin/wlan_carrier_bin\.sh                         u:object_r:init_wifi_exec:s0
-/(vendor|system/vendor)/bin/init\.qti\.fm\.sh		u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/hw/motorola\.hardware\.camera\.provider@2\.4-service u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/lib/motorola\.hardware\.camera\.device@1\.0.so                  u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/lib/motorola\.hardware\.camera\.provider@2\.4.so                u:object_r:hal_camera_default_exec:s0
@@ -107,7 +106,6 @@
 /data/vendor/time(/.*)?                                         u:object_r:time_data_file:s0
 
 /(vendor|system/vendor)/bin/perfd           u:object_r:perfd_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.1-service-qti          u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/radio(/.*)? u:object_r:radio_data_file:s0
 
 /(vendor|system/vendor)/bin/qmi_motext_hook u:object_r:rild_exec:s0
