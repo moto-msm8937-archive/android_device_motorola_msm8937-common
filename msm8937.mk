@@ -27,9 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # Soong
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)/libhidl \
-    $(LOCAL_PATH)/libshims
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Properties
 $(call inherit-product, device/motorola/msm8937-common/vendor_prop.mk)
