@@ -196,11 +196,6 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
-# Soong
-PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH)/libhidl \
-    $(COMMON_PATH)/libshims
-
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
 
