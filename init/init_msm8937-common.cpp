@@ -65,39 +65,12 @@ void vendor_load_properties()
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
     std::string radio = android::base::GetProperty("ro.boot.radio", "");
-    property_set("ro.hw.device", device.c_str());
-    property_set("ro.hw.radio", radio.c_str());
+    property_set("ro.vendor.hw.device", device.c_str());
+    property_set("ro.vendor.hw.radio", radio.c_str());
 
     // devices
     static const unsigned cedric = (device == "cedric");
     static const unsigned montana = (device == "montana");
     static const unsigned owens = (device == "owens");
     static const unsigned perry = (device == "perry");
-
-    if (cedric) {
-        // fingerprint
-        property_set("ro.hw.ecompass", "false");
-        property_set("ro.hw.fps", "true");
-        property_set("ro.hw.imager", "13MP");
-        property_set("ro.hw.nfc", "false");
-    }
-    if (montana) {
-        // fingerprint
-        property_set("ro.hw.fps", "true");
-        property_set("ro.hw.imager", "16MP");
-    }
-    if (owens) {
-        // fingerprint
-        property_set("ro.hw.ecompass", "true");
-        property_set("ro.hw.fps", "true");
-        property_set("ro.hw.imager", "13MP");
-        property_set("ro.hw.nfc", "false");
-    }
-    if (perry) {
-        // fingerprint
-        property_set("ro.hw.ecompass", "true");
-        property_set("ro.hw.imager", "8MP");
-        property_set("ro.hw.nfc", "false");
-    }
-
 }
