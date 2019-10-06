@@ -258,12 +258,10 @@ on moto-charger
     start vendor.thermal-com
 
 on property:ro.boot.dualsim=true
-   setprop ro.hw.dualsim true
    setprop persist.radio.multisim.config dsds
    setprop ro.telephony.default_network 10,10
 
 on property:ro.boot.dualsim=false
-   setprop ro.hw.dualsim false
    setprop persist.radio.multisim.config ""
    setprop ro.telephony.default_network 10
 
