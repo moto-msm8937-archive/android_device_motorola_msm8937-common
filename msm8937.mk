@@ -318,7 +318,7 @@ PRODUCT_PACKAGES += \
 
 # Releasetools
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/check_features.sh:$(TARGET_COPY_OUT_VENDOR)/bin/check_features.sh
+    $(LOCAL_PATH)/configs/check_features.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/check_features.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
