@@ -686,7 +686,6 @@ vendor/lib/lib_remote_simlock.so
 vendor/lib/libasn1cper.so
 vendor/lib/libasn1crt.so
 vendor/lib/libasn1crtx.so
-vendor/lib/libbson.so
 vendor/lib/libc2d30-a3xx.so
 vendor/lib/libc2d30-a4xx.so
 vendor/lib/libc2d30-a5xx.so
