@@ -71,10 +71,6 @@ void check_device()
 
 void vendor_load_properties()
 {
-    std::string platform = android::base::GetProperty("ro.board.platform", "");
-
-    if (platform != ANDROID_TARGET)
-        return;
 
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
