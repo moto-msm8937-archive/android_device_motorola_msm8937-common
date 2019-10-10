@@ -628,26 +628,8 @@ vendor/lib/libwfdmmsink.so
 vendor/lib/libwfduibcsink.so
 vendor/lib/libwfduibcsinkinterface.so
 
-# Wi-Fi Tethering
-vendor/lib/libQtiTether.so
-vendor/lib64/libQtiTether.so
-
-etc/firmware/ice40.bin
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv_3.2.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv_3.2.tlv
-etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf
-
 # Misc
+etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf
 etc/permissions/ConnectivityExt.xml
 etc/permissions/com.qti.dpmframework.xml
 framework/ConnectivityExt.jar
