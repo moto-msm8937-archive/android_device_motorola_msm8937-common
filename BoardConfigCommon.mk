@@ -19,7 +19,6 @@ include vendor/motorola/msm8937-common/BoardConfigVendor.mk
 
 COMMON_PATH := device/motorola/msm8937-common
 BOARD_VENDOR := motorola-qcom
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
