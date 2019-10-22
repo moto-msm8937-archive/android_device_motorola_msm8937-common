@@ -619,11 +619,6 @@ vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
-# Soter
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|6dd2ec266b2597210edf80f83f81ddc9a7893bbb
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
-vendor/lib64/vendor.qti.hardware.soter@1.0.so|167a17c4d7c270ac7074389826152d5bf72ffa48
-
 # Thermal engine
 vendor/bin/thermal-engine|676d4cdfb4c97f6ad1d9f22f79844ae80e834c2b
 vendor/lib/libthermalclient.so|b41ea4c90353b8e057f774979d8ce5d3a006f70c
@@ -635,11 +630,6 @@ vendor/lib64/libthermalioctl.so|1ce39d2a088f8e943be9a4c4b6d3c212a9881d95
 vendor/bin/time_daemon|038a4f90c6e038fe7e75984a8c1a66e89dd925fb
 vendor/lib/libtime_genoff.so|ded36d07a5d72da61798be1aac4593f462dec9b8
 vendor/lib64/libtime_genoff.so|362d37e80859957576499a0969aaaaa75b0bb27e
-
-# TUI Comm
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|f3741de823b66f8ab6be1d9a38591c3674f52c4f
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e0a9fddd1ccbeb77766e3e8961553437d817948f
 
 # WCNSS
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
