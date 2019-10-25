@@ -482,11 +482,6 @@ service vendor.qseeproxydaemon /vendor/bin/qseeproxydaemon
     group system
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.esepmdaemon /vendor/bin/esepmdaemon
-    class core
-    user system
-    group nfc
-
 service vendor.wcnss-service /vendor/bin/wcnss_service
     class late_start
     user system
