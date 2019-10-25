@@ -79,14 +79,13 @@ PRODUCT_PACKAGES += \
     Snap \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
-    libgpu_mapper_shim \
     libjustshoot_shim \
     android.hardware.camera.provider@2.4-impl \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/external_camera_config.xml:system/etc/external_camera_config.xml
+    $(LOCAL_PATH)/configs/external_camera_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/external_camera_config.xml
 
 # Display
 PRODUCT_PACKAGES += \
@@ -135,7 +134,7 @@ PRODUCT_PACKAGES += \
     libfmjni \
     init.qti.fm.sh
 
-# Gatekeeper HAL
+# Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
@@ -159,7 +158,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     $(LOCAL_PATH)/gps/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem
 
-# Health HAL
+# Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.msm8937
 
@@ -199,7 +198,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/synaptics_rmi4_i2c.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl
 
-# Keymaster HAL
+# Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
@@ -207,8 +206,7 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service.msm8937 \
-    lights.msm8937
+    android.hardware.light@2.0-service.msm8937
 
 # Media
 PRODUCT_PACKAGES += \
@@ -351,15 +349,15 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.1-service \
     thermal.msm8937
 
-# Touch HAL
+# Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.msm8937
 
-# Trust HAL
+# Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
 
-# USB HAL
+# USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
@@ -377,7 +375,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     android.hardware.wifi.supplicant@1.0 \
     hostapd \
-    libqsap_sdk \
     libwpa_client \
     wcnss_service \
     wificond \
