@@ -1,5 +1,5 @@
 <manifest version="1.0" type="device" target-level="1">
-   <hal format="hidl">
+    <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
         <version>4.0</version>
@@ -34,6 +34,11 @@
             <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.broadcastradio</name>
+        <transport arch="32+64">passthrough</transport>
+        <version>1.0</version>
     </hal>
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
@@ -91,6 +96,16 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.gnss</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+            <instance>gnss_vendor</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -115,16 +130,6 @@
         <interface>
             <name>IMapper</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.gnss</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IGnss</name>
-            <instance>default</instance>
-            <fqname>@1.0::IGnss/gnss_vendor</fqname>
         </interface>
     </hal>
     <hal format="hidl">
@@ -177,6 +182,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.power</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -188,7 +202,7 @@
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.1</version>
         <interface>
             <name>IRadio</name>
             <instance>slot1</instance>
@@ -229,23 +243,14 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.thermal</name>
+        <name>android.hardware.usb</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
-            <name>IThermal</name>
+            <name>IUsb</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-	    <name>android.hardware.usb</name>
-	    <transport>hwbinder</transport>
-	    <version>1.0</version>
-	    <interface>
-		    <name>IUsb</name>
-		    <instance>default</instance>
-	    </interface>
-	</hal>
     <hal format="hidl">
         <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
@@ -283,21 +288,52 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>com.qualcomm.qti.bluetooth_audio</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBluetoothAudio</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>com.qualcomm.qti.imscmservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IImsCmService</name>
             <instance>qti.ims.connectionmanagerservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>com.qualcomm.qti.uceservice</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUceService</name>
+            <instance>com.qualcomm.qti.uceservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>com.qualcomm.qti.wifidisplayhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDSManager</name>
+            <instance>wifidisplaydshal</instance>
+        </interface>
+        <interface>
+            <name>IHDCPSession</name>
+            <instance>wifidisplayhdcphal</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>com.quicinc.cne.api</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IApiService</name>
+            <instance>cnd</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>com.quicinc.cne.server</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IServer</name>
+            <instance>cnd</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -339,6 +375,10 @@
             <name>IPictureAdjustment</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.lineage.power</name>
@@ -346,6 +386,15 @@
         <version>1.0</version>
         <interface>
             <name>ILineagePower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.touch</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IKeyDisabler</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -359,11 +408,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.data.factory</name>
+        <name>vendor.nxp.nxpnfc</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IFactory</name>
+            <name>INxpNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -383,25 +432,6 @@
         <interface>
             <name>ILocHidlGnss</name>
             <instance>gnss_vendor</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.alarm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAlarm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.data.connection</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDataConnection</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -439,7 +469,6 @@
             <name>IQdutilsDisp</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IGnss/gnss_vendor</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.am</name>
@@ -461,19 +490,9 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.radio.config</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IConfig</name>
-            <instance>radioconfig0</instance>
-            <instance>radioconfig1</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <version>1.4</version>
+        <version>1.0</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -487,7 +506,6 @@
         <interface>
             <name>IUimLpa</name>
             <instance>UimLpa0</instance>
-            <instance>UimLpa1</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -503,7 +521,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>1.0</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
@@ -513,11 +531,31 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>IUim</name>
             <instance>Uim0</instance>
             <instance>Uim1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.uim_remote_client</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUimRemoteServiceClient</name>
+            <instance>uimRemoteClient0</instance>
+            <instance>uimRemoteClient1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.uim_remote_server</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUimRemoteServiceServer</name>
+            <instance>uimRemoteServer0</instance>
+            <instance>uimRemoteServer1</instance>
         </interface>
     </hal>
     <hal format="hidl">
