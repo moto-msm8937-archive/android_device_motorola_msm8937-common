@@ -838,3 +838,4 @@ vendor/lib64/libqti-gt.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libsmemlog.so
 vendor/lib64/libsubsystem_control.so
+vendor/lib64/vndk/libtinyalsa.so|176a958864efa1f5514950dc2cc685d210afbc89
