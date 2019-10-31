@@ -383,10 +383,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     libcurl \
     libQWiFiSoftApCfg \
-    wificond \
-    wifilogd \
     tcpdump \
-    wcnss_service \
     libwpa_client
 
 PRODUCT_COPY_FILES += \
