@@ -136,8 +136,6 @@ vendor/lib64/libStDrvInt.so|aa429db14b38681b4fc8b8c27c3cb95803f633b3
 vendor/lib64/libssd.so
 
 # DRM - Clearkey
-vendor/bin/hw/android.hardware.drm@1.1-service.clearkey|1ee09abf9c0eebc95f0213c9ce56e3e3cf6e7fd2
-vendor/etc/init/android.hardware.drm@1.1-service.clearkey.rc|acf0c3c835d4cf105b8832b9fd16046042aad629
 vendor/lib/mediadrm/libdrmclearkeyplugin.so|8b706561f7081ad314c49e3ccf93da2e3ce34567
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so|77df16678eb1a9c90cd2d5bc90b9095ec8552b6b
 
