@@ -347,10 +347,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.1-service \
     thermal.msm8937
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.msm8937
-
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
