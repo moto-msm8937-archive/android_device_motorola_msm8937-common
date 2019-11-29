@@ -78,9 +78,6 @@ on late-fs
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
-    # Set permissions for persist partition
-    mkdir /persist 0771 root system
-
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
