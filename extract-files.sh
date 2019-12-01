@@ -70,6 +70,7 @@ patchelf --replace-needed libui.so libui-v27.so "${COMMON_BLOB_ROOT}/vendor/lib6
 patchelf --add-needed libshim_adsp.so "${COMMON_BLOB_ROOT}/vendor/bin/adspd"
 patchelf --add-needed libqsap_shim.so "${COMMON_BLOB_ROOT}/vendor/lib64/libmdmcutback.so"
 patchelf --add-needed libbinder-v27.so "${COMMON_BLOB_ROOT}/vendor/bin/ims_rtp_daemon"
+sed -i 's|/system/framework/qcrilhook.jar|/vendor/framework/qcrilhook.jar|g' "${COMMON_BLOB_ROOT}/vendor/etc/permissions/qcrilhook.xml"
 
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
