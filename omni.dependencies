@@ -1,9 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "moto-msm8937/android_kernel_motorola_msm8937",
+    "repository": "wiktorek140/msm-4.9",
     "target_path": "kernel/motorola/msm8937",
-    "revision": "twrp-7.1"
+    "revision": "twrp-9.0"
   },
   {
     "remote": "github",
