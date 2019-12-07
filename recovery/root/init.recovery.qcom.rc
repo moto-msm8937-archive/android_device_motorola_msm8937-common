@@ -1,8 +1,5 @@
 import init.target.recovery.rc
 
-on fs
-    symlink /dev/block/bootdevice/by-name/oem /dev/block/bootdevice/by-name/vendor
-
 # Allow usb charging to be disabled peristently
 on property:persist.usb.chgdisabled=1
 #USB controller configuration
