@@ -1,5 +1,9 @@
 import init.target.recovery.rc
 
+on property:ro.build.system_root_image=true
+    export ANDROID_ROOT /system_root
+    symlink /system /system_root/system
+
 # separate copy needed to use /sbin/linker instead of /system/bin/linker
 service sbinqseecomd /sbin/qseecomd
     oneshot
