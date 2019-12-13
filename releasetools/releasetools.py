@@ -22,7 +22,9 @@ def FullOTA_InstallEnd(info):
 
 def ReplaceDeviceConfig(info):
   info.script.Mount("/system")
+  info.script.Mount("/vendor")
   info.script.AppendExtra('ui_print("Checking for device features");')
   info.script.AppendExtra('run_program("/sbin/sh", "/system/bin/check_features.sh");')
   info.script.AppendExtra('run_program("/sbin/rm", "/system/bin/check_features.sh");')
   info.script.Unmount("/system")
+  info.script.Unmount("/vendor")
