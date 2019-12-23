@@ -3,6 +3,8 @@
 device=`getprop ro.boot.device`
 radio=`getprop ro.boot.radio`
 
+mount /dev/block/bootdevice/by-name/oem /vendor
+
 if [ "$device" != "cedric" ] && [ "$device" != "owens" ] && [ "$device" != "perry" ]; then
     # cedric, owens & perry have e-compasses
     rm /vendor/etc/permissions/android.hardware.sensor.compass.xml
@@ -21,3 +23,5 @@ if [ "$device" == "montana" ]; then
         rm /vendor/etc/permissions/android.hardware.sensor.compass.xml
     fi
 fi
+
+umount /vendor
