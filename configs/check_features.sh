@@ -7,7 +7,7 @@ radio=`getprop ro.boot.radio`
 umount /vendor
 mount /vendor
 
-if [ "$radio" == "APAC" ] || [ "$radio" == "EMEA" ] && [ "$device" != "cedric" ] && [ "$device" != "owens" ] && [ "$device" != "perry" ]; then
+if [ "$radio" == "Brazil" ] || [ "$radio" == "APAC" ] || [ "$radio" == "EMEA" ] && [ "$device" != "cedric" ] && [ "$device" != "owens" ] && [ "$device" != "perry" ]; then
     # On montana APAC and EMEA radios don't have e-compasses
     rm /vendor/etc/permissions/android.hardware.sensor.compass.xml
 fi
