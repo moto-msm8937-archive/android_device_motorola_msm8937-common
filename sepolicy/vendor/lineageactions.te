@@ -1,0 +1,8 @@
+type lineageactions, domain;
+
+app_domain(lineageactions)
+
+allow lineageactions sysfs_homebutton:file { write open getattr };
+
+dontaudit lineageactions system_app_data_file:file create_file_perms;
+dontaudit lineageactions system_app_data_file:dir create_dir_perms;
