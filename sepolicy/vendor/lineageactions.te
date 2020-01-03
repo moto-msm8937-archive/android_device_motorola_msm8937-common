@@ -1,0 +1,5 @@
+type lineageactions, domain;
+
+app_domain(lineageactions)
+
+allow lineageactions sysfs_homebutton:file { write open getattr };
