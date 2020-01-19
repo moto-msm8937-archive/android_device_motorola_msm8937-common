@@ -49,7 +49,6 @@ vendor/lib64/libldacBT_abr.so
 vendor/lib64/libldacBT_enc.so
 
 # Camera
-lib/lib_mottof.so
 lib/libadvalgcore.so
 lib/libarcsoft_beautyshot.so:vendor/lib/libarcsoft_beautyshot.so
 lib/libfamily_photo.so:vendor/lib/libfamily_photo.so
@@ -531,7 +530,7 @@ vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/lib/libconfigdb.so
-vendor/lib/lib-dplmedia.so
+vendor/lib/lib-dplmedia.so|9a77ad6a3bdcf8bed0fc80761a111b046a9fbae0
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
@@ -547,9 +546,9 @@ vendor/lib/libsystem_health_mon.so
 vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
 vendor/lib64/libadropbox.so
 vendor/lib64/libconfigdb.so
-vendor/lib64/lib-dplmedia.so
+vendor/lib64/lib-dplmedia.so|da612bfe4f85c9ba7ef4bee757e10e68e3a718fe
 vendor/lib64/liblqe.so
-vendor/lib64/libmdmcutback.so|397c0b4b6615b40983d9b9ceb15a7ef7b6faf62d
+vendor/lib64/libmdmcutback.so|3483951dab0f29254ee061a61723a2cb8425aaaa
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libmotext_inf.so
 vendor/lib64/libnetmgr.so
@@ -586,8 +585,9 @@ framework/embmslibrary.jar
 framework/imscmlibrary.jar
 framework/rcsimssettings.jar
 lib64/com.qualcomm.qti.imscmservice@1.0.so
+lib64/libdiag_system.so
 lib64/vendor.qti.imsrtpservice@1.0.so
-vendor/bin/ims_rtp_daemon|fa242ed87d5dcbd1d63206ed8bd16fbabe70abc3
+vendor/bin/ims_rtp_daemon|ddd4d6de78a01b25bdece202cecd13b56f49eaac
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
@@ -612,12 +612,10 @@ vendor/lib/lib-rtpcore.so
 vendor/lib/lib-rtpdaemoninterface.so
 vendor/lib/lib-rtpsl.so
 vendor/lib/libdiag_system.so
-vendor/lib/libimscamera_jni.so
-vendor/lib/libimsmedia_jni.so
 vendor/lib/librcc.so
 vendor/lib64/lib-ims-rcscmjni.so
 vendor/lib64/lib-imsSDP.so
-vendor/lib64/lib-imscamera.so
+vendor/lib64/lib-imscamera.so:lib64/lib-imscamera.so
 vendor/lib64/lib-imscmservice.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
@@ -626,10 +624,10 @@ vendor/lib64/lib-imsrcscm.so
 vendor/lib64/lib-imsrcscmclient.so
 vendor/lib64/lib-imsrcscmservice.so
 vendor/lib64/lib-imss.so
-vendor/lib64/lib-imsvideocodec.so|7aae8b3177c1f50c3031bd1f84e1275f3c94393c
-vendor/lib64/lib-imsvt.so
-vendor/lib64/lib-imsvtextutils.so
-vendor/lib64/lib-imsvtutils.so
+vendor/lib64/lib-imsvideocodec.so:lib64/lib-imsvideocodec.so|7aae8b3177c1f50c3031bd1f84e1275f3c94393c
+vendor/lib64/lib-imsvt.so:lib64/lib-imsvt.so
+vendor/lib64/lib-imsvtextutils.so:lib64/lib-imsvtextutils.so
+vendor/lib64/lib-imsvtutils.so:lib64/lib-imsvtutils.so
 vendor/lib64/lib-imsxml.so
 vendor/lib64/lib-rcsimssjni.so
 vendor/lib64/lib-rcsjni.so
@@ -638,8 +636,8 @@ vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
 vendor/lib64/libdiag_system.so
-vendor/lib64/libimscamera_jni.so
-vendor/lib64/libimsmedia_jni.so
+vendor/lib64/libimscamera_jni.so:lib64/libimscamera_jni.so
+vendor/lib64/libimsmedia_jni.so:lib64/libimsmedia_jni.so
 vendor/lib64/librcc.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
@@ -661,10 +659,6 @@ vendor/lib64/libtime_genoff.so|362d37e80859957576499a0969aaaaa75b0bb27e
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|f3741de823b66f8ab6be1d9a38591c3674f52c4f
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e0a9fddd1ccbeb77766e3e8961553437d817948f
-
-# VNDK
-vendor/lib/vndk/libbinder.so|878062dea4925dd303ff026e07266f90fdb52c02
-vendor/lib/vndk-sp/libcutils.so|80f6e21fc5aade324dbc53967f6d129f9846ef29
 
 # WCNSS
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin::vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
@@ -772,7 +766,7 @@ lib/libmotefem_svc.so
 lib/libuiblur.so
 lib/libYuvSkia.so
 vendor/bin/ptt_socket_app
-vendor/bin/qseeproxydaemon
+vendor/bin/qseeproxydaemon|b12954a94a6d6611e42c6bd0928e7cc30d92334f
 vendor/bin/qseeproxysampledaemon
 vendor/bin/radish
 vendor/bin/ssr_setup

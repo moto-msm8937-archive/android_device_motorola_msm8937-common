@@ -24,3 +24,9 @@ cc_library_shared {
     name: "libjustshoot_shim",
     vendor: true,
 }
+
+cc_library_shared {
+    shared_libs: ["libgui_vendor"],
+    name: "libwui",
+    vendor: true,
+}

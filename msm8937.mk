@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libbson.vendor \
+    libwui \
     Snap \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
@@ -164,6 +165,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0.vendor \
     android.hidl.manager-V1.0-java
@@ -344,8 +347,7 @@ PRODUCT_PACKAGES += \
     libxml2
 
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui-v27.so \
-    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v27.so
+    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libui-v27.so
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
