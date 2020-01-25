@@ -26,6 +26,12 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    srcs: ["graphicbuffer.cpp"],
+    name: "libppeiscore_shim",
+    vendor: true,
+}
+
+cc_library_shared {
     shared_libs: ["libgui_vendor"],
     name: "libwui",
     vendor: true,
