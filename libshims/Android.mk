@@ -17,15 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-# ADSP
-include $(CLEAR_VARS)
-LOCAL_C_INCLUDES := external/tinyalsa/include
-LOCAL_SRC_FILES := mixer.c
-LOCAL_MODULE := libshim_adsp
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_SHARED_LIBRARY)
-
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := libqsap_shim.c
 LOCAL_SHARED_LIBRARIES := libqsap_sdk liblog libcutils libutils

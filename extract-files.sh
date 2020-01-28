@@ -67,7 +67,6 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 COMMON_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary"
 
 patchelf --replace-needed libui.so libui-v27.so "${COMMON_BLOB_ROOT}/vendor/lib64/lib-imsvideocodec.so"
-patchelf --add-needed libshim_adsp.so "${COMMON_BLOB_ROOT}/vendor/bin/adspd"
 patchelf --add-needed libqsap_shim.so "${COMMON_BLOB_ROOT}/vendor/lib64/libmdmcutback.so"
 patchelf --remove-needed libbinder-v27.so "${COMMON_BLOB_ROOT}/vendor/bin/ims_rtp_daemon"
 sed -i 's|/system/framework/qcrilhook.jar|/vendor/framework/qcrilhook.jar|g' "${COMMON_BLOB_ROOT}/vendor/etc/permissions/qcrilhook.xml"

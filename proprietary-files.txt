@@ -1,40 +1,37 @@
 # Proprietary files for msm8937-common
 
-# Alarm
-vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-
-# Audio
-vendor/bin/adspd|0ac89526c2b100dc836c226f88d54455422d181a
-vendor/bin/adsprpcd
-vendor/bin/audioflacapp
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libadspd.so
-vendor/lib/libadsprpc.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libaudioparsers.so
-vendor/lib64/libacdb-fts.so|f6396f69d61216d0eeb1218b700f40e7d4bbc6c7
-vendor/lib64/libacdbloader.so|b5ce7e58fedc7dd524067e249881c3f104a9a274
-vendor/lib64/libacdbrtac.so|2e44a45a2f61c621d4c746acc83139718d18cee
-vendor/lib64/libadiertac.so|71d606669c19e567283751ce0ecdf757792adab3
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadspd.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libaudcal.so|fdb34621e3d4433bcdc047ad536f0dac3a85b0e7
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libqtigef.so|866d472595027a968aa9cc7216257f656e2181a9
+# ADSP - from deen PPKS29.68-16-36-13
+vendor/bin/adsprpcd|3d1e7e14dfc2f2468a06e0af9c0d34f4bda28d4b
+vendor/lib/libadsp_default_listener.so|d9de89d55eba2d35a7583584b51335a663705fa7
+vendor/lib/libadsprpc.so|7e5c1e4d18cb8053087baaf97a1e9eecf383d88b
+vendor/lib/libfastcvadsp_stub.so|6b50fd7d53811b51e06fedd87c12a794d0c2f645
+vendor/lib/libfastcvopt.so|b36b3c6805e8fc3c9cc1d0465d53d0f6cd587336
+vendor/lib/libmdsprpc.so|ecee6ff10493d8c29129bab98cf9853ddb930877
+vendor/lib64/libadsp_default_listener.so|f7ea94537c66dfa11e1235064d43c8f56c3b3c51
+vendor/lib64/libadsprpc.so|f8e157e472e5d77c7198d6f901fb5dc3fd2db5d0
+vendor/lib64/libfastcvopt.so|8bf629759f67073a0c310c25452e8610825f78cc
+vendor/lib64/libfastcvadsp_stub.so|ad72fe745a7a8f4b3a355cc0aaf177c29301f29f
+vendor/lib64/libmdsprpc.so|2b1061f4abfe24cd505035c2389acd99e9c3efa9
 
 # AptX
 lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
 lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
+
+# Audio - from deen PPKS29.68-16-36-13
+vendor/lib/libacdb-fts.so|010d1cc4e07ce0e6ca489bfb310d00f3112e9ff9
+vendor/lib/libacdbloader.so|ca55798714f6c877ee499e4b676ab0d0ec62112d
+vendor/lib/libacdbrtac.so|bfebd31e1ae1ad69bdb0f852cf769cd0df0fa89d
+vendor/lib/libadiertac.so|e1e2f8370431717ede77b55b412bdba9f8793c97
+vendor/lib/libaudcal.so|4dff962fe34f6e8fcb53c8248ec72229212e546d
+vendor/lib/libaudioalsa.so|997cbf1cecd876ccde8713eaf4ffafe7a314c5d5
+vendor/lib/libqtigef.so|2808bb4ced16fe12330a129d018842f8ae00d9e0
+vendor/lib64/libacdb-fts.so|f6396f69d61216d0eeb1218b700f40e7d4bbc6c7
+vendor/lib64/libacdbloader.so|b5ce7e58fedc7dd524067e249881c3f104a9a274
+vendor/lib64/libacdbrtac.so|2e44a45a2f61c621d4c746acc83139718d18ceef
+vendor/lib64/libadiertac.so|71d606669c19e567283751ce0ecdf757792adab3
+vendor/lib64/libaudcal.so|fdb34621e3d4433bcdc047ad536f0dac3a85b0e7
+vendor/lib64/libaudioalsa.so|41490c31b696d083c269baf5b4937f577a42c1ea
+vendor/lib64/libqtigef.so|33a6beee3145f6a37009cf7d294a8bf3beb0d1f6
 
 # Bluetooth
 lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|cf5c9e6ee16a99a7c16cc21fc126fff5692aa904

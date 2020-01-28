@@ -139,9 +139,6 @@ on post-fs-data
     #Folder for hardware properties
     mkdir /data/hardware_revisions 0755 system system
 
-    #Create directory for adspd
-    mkdir /data/adspd 0770 audio diag
-
     # Setup folder for camera dump subsystem
     mkdir /data/camera_dump 0750 media media
 
@@ -260,12 +257,6 @@ on property:ro.boot.dualsim=false
 
 on property:ro.boot.hwrev=*
    start vendor.mmi-boot-sh
-
-service vendor.adspd /vendor/bin/adspd
-   class main
-   socket adspdsock stream 0660 system audio
-   user audio
-   group audio input diag
 
 service vendor.mmi-boot-sh /vendor/bin/sh /vendor/bin/init.mmi.boot.sh
     class core
