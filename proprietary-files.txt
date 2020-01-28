@@ -36,14 +36,11 @@ vendor/lib64/libqtigef.so|33a6beee3145f6a37009cf7d294a8bf3beb0d1f6
 # Bluetooth
 lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|cf5c9e6ee16a99a7c16cc21fc126fff5692aa904
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|e5d4835653f15c45d859c6d200cd34139a984bcc
-vendor/bin/wcnss_filter
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f8d13cb53b0ada874fe829cb4951e01cc5c6606d
 vendor/lib/libbtnv.so
 vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|cf5c9e6ee16a99a7c16cc21fc126fff5692aa904
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|a03e54af71c27c2ff00c9d13171c55a6fc391b5d
 vendor/lib64/libbtnv.so
-vendor/lib64/libldacBT_abr.so
-vendor/lib64/libldacBT_enc.so
 
 # Camera
 lib/libadvalgcore.so
