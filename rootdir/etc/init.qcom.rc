@@ -416,6 +416,9 @@ on post-fs-data
     mkdir /data/vendor/fm 0770 system system
     chmod 0770 /data/vendor/fm
 
+    #Start move time data to /data/vendor once post-fs-data done
+    start vendor.move_time_data
+
     setprop vold.post_fs_data_done 1
 
 service charger /charger
@@ -451,6 +454,13 @@ service vendor.time_daemon /vendor/bin/time_daemon
    class main
    user root
    group root
+
+service vendor.move_time_data /system/bin/move_time_data.sh
+    class main
+    user system
+    group system
+    disabled
+    oneshot
 
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
