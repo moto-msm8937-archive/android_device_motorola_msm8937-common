@@ -75,9 +75,6 @@ on post-fs
     write /proc/sys/vm/page-cluster 0
 
 on post-fs-data
-    #setup folder for WLAN WAPI
-    chmod 0770 /data/wapi_certificate
-	
     # Setup folders for security
     mkdir /mnt/vendor/persist/security 02770 oem_5007 oem_5007
     mkdir /data/local/dbvc 0750 oem_5004 shell
@@ -109,10 +106,7 @@ on post-fs-data
     mkdir /data/system/dropbox-add 0730 system diag
 
     # Create directory for cutback
-    mkdir /data/misc/cutback 0770 radio wifi
-
-    # Create directory for fm_radio
-    mkdir /data/misc/fm_radio 0770 system system
+    mkdir /data/vendor/misc/cutback 0770 radio wifi
 
     #setup folder for WLAN WAPI
     mkdir /data/wapi_certificate 0750 system wifi
@@ -150,9 +144,6 @@ on post-fs-data
 
     # NFC vendor data
     mkdir /data/vendor/nfc 0770 nfc nfc
-
-    #setup folder for WLAN WAPI
-    chmod 0770 /data/wapi_certificate
 
     # Enable directory writer xattr for 2nd level directory /storage/emulated/xx/yy
     setfattr /data/media user.dwriter /%s/%s 0

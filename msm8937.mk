@@ -141,9 +141,7 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     android.hardware.gnss@1.1-impl-qti \
-    android.hardware.gnss@1.1-service-qti \
-    libqsap_sdk \
-    libqsap_shim
+    android.hardware.gnss@1.1-service-qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
@@ -337,9 +335,11 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0 \
-    librmnetctl \
+    android.hardware.radio.config@1.0 \
     libprotobuf-cpp-full \
+    libqsap_sdk \
+    libqsap_shim \
+    librmnetctl \
     libxml2
 
 PRODUCT_COPY_FILES += \
