@@ -816,7 +816,6 @@ framework/com.qti.dpmframework.jar
 framework/dpmapi.jar
 framework/tcmclient.jar
 lib/lib_mot_app6_metadata.so:vendor/lib/lib_mot_app6_metadata.so
-lib/libjson.so
 lib/libmemalloc.so
 lib/libmotaudioutils.so
 lib/libmotefem_svc.so
