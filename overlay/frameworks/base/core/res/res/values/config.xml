@@ -39,6 +39,7 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
+        <item>3</item>
         <item>6</item>
         <item>12</item>
         <item>25</item>
@@ -58,6 +59,7 @@
         <item>10000</item>
         <item>15000</item>
         <item>20000</item>
+        <item>25000</item>
         <item>30000</item>
         <item>65535</item>
     </integer-array>
@@ -68,6 +70,7 @@
          This must be overridden in platform specific overlays -->
 
     <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>3</item>
         <item>7</item>
         <item>10</item>
         <item>13</item>
@@ -91,6 +94,7 @@
         <item>192</item>
         <item>205</item>
         <item>218</item>
+        <item>230</item>
     </integer-array>
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
